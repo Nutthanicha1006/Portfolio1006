@@ -1,0 +1,157 @@
+body{
+    background-color:#cc8418;
+    text-align: center;
+}
+img{
+    width: 100%;
+    border-radius: 80px;
+}
+h1{
+    color:  rgb(214, 214, 214);
+    background-color:#64120d;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 50px;
+}
+h2{
+    color:  rgb(214, 214, 214);
+    background-color:#64120d;
+}
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+}
+.cinnamonpic_pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cinnamonpic_pic > div{
+    border: 20px solid rgb(65, 50, 32);
+    border-radius: 80px;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+}
+.Ingredients_pic{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; 
+}
+.Ingredients_pic > div{
+    border: 20px dotted rgb(65, 50, 32);
+    border-radius: 80px;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+}
+.instructions_pic{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center
+}
+.instructions_pic > div{
+    border-radius: 0px;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+}
+#Ingredients_data{
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: italic;
+    margin: auto;
+    width: 60%;
+}
+#instructions_data{
+    text-align: left;
+    margin: auto;
+}
+a:link{
+    color: blue;
+}
+a:visited{
+    color: dimgray;
+}
+a:hover{
+    color: brown;
+}
+.reference{
+    text-align: center;
+    font-size: 150%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:10% auto 20% ;
+    grid-gap: 20px;
+}
+.grid-container > div{
+    border: 20px solid rgb(103, 68, 20);
+    font-size: 30px;
+    text-align: center;
+    background-color:#eee6da;
+}
+#header{
+    grid-column: 1 / span 3;
+}
+#allrecipe{
+    grid-column: 1 / span 1;
+}
+#right{
+    grid-column: 3 / span 1;
+}
+#main{
+    grid-column: 2 / span 1;
+}
+#footer{
+    grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width :850px){
+    .grid-container{
+        display: grid;
+        grid-template-columns:auto 20% ;
+        grid-gap: 15px;
+    }
+    #header{
+        grid-column: 1 / span 2;
+    }
+    #allrecipe{
+        grid-column: 1 / span 2;
+    }
+    #right{
+        grid-column: 2 / span 1;
+    }
+    #main{
+        grid-column: 1 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width :500px){
+    .grid-container{
+        display: grid;
+        grid-template-columns:auto ;
+        grid-gap: 15px;
+    }
+    #header{
+        grid-column: 1 / span 1;
+    }
+    #allrecipe{
+        grid-column: 1 / span 1;
+    }
+    #right{
+        grid-column: 1 / span 1;
+    }
+    #main{
+        grid-column: 1 / span 1;
+    }
+    #footer{
+        grid-column: 1 / span 1;
+    }
+}
